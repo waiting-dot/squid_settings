@@ -46,3 +46,7 @@ ssl_crtd.exe -c -s C:\squid\etc\bump\ssldb (ВАЖНО: каталога ssldb �
 Установка для Ubuntu
 ------------ 
 ...
+
+### :link: Ссылки
+* [Установка прокси-сервера Squid под Windows (HTTPS + AUFS + ROCK)](https://rustedowl.livejournal.com/44380.html) 
+* [Прозрачный прокси для HTTPS в Squid](https://losst.ru/prozrachnyj-proksi-dlya-https-v-squid) 
