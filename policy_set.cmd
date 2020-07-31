@@ -15,7 +15,6 @@ echo Установка пароля для администратора
 @net user Администратор "%adminpass%"
 
 echo Сделаем Админстратора владельцем папки C:\Squid\etc\squid
-icacls "C:\Squid\etc\squid" /inheritance:r
 icacls "C:\Squid\etc\squid\*" /setowner Администратор /T /C /L /Q
 
 echo Перезагрузим сервер squid
