@@ -20,7 +20,6 @@
 .google.com/recaptcha
 .google.com:443/recaptcha
 .googleapis.com
-.gov.kz
 .habr.com
 .habrastorage.org
 .ruboard.ru
@@ -39,8 +38,6 @@ ocsp.omniroot.com
 .platron.ru
 .habracdn.net
 .habrastorage.org
-.hsto.org
-.ps.kz
 ssl.gstatic.com
 .githubassets.com
 cdn.arkoselabs.com
