@@ -15,9 +15,9 @@ echo Установка пароля для администратора
 @net user Администратор "%adminpass%"
 
 echo Сделаем папку C:\Squid\etc\squid только для чтения
-icacls.exe "C:\Squid\etc\squid\*" /reset
-icacls.exe "C:\Squid\etc\squid\*" /GRANT:R "%var%":R
-icacls.exe "C:\Squid\etc\squid\*" /inheritance:r
+icacls "C:\Squid\etc\squid" /grant:r Администраторы:(OI)(CI)(M,RX,D,WDAC,WO) Система:(OI)(CI)(M,RX,D,WDAC,WO) Пользователи:(OI)(CI)RX Все:(OI)(CI)RX /C /L /Q
+icacls "C:\Squid\etc\squid" /setowner Система /T /C /L /Q
+icacls "C:\Squid\etc\squid" /inheritance:r /C /Q
 
 echo Перезагрузим сервер squid
 @net stop /y squidsrv && net start squidsrv
